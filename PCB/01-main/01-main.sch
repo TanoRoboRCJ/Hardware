@@ -21233,13 +21233,13 @@ by exp-lbrs.ulp</description>
 <instance part="P+16" gate="1" x="53.34" y="81.28" smashed="yes">
 <attribute name="VALUE" x="45.72" y="78.74" size="1.778" layer="96"/>
 </instance>
-<instance part="R10" gate="G$1" x="58.42" y="53.34" smashed="yes" rot="R180">
-<attribute name="NAME" x="53.34" y="55.88" size="1.778" layer="95"/>
-<attribute name="VALUE" x="53.34" y="48.26" size="1.778" layer="96"/>
+<instance part="R10" gate="G$1" x="73.66" y="53.34" smashed="yes" rot="R180">
+<attribute name="NAME" x="68.58" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="68.58" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="LED18" gate="G$1" x="68.58" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="66.04" y="55.88" size="1.778" layer="95"/>
-<attribute name="VALUE" x="66.04" y="47.244" size="1.778" layer="96"/>
+<instance part="LED18" gate="G$1" x="58.42" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.88" y="55.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="55.88" y="47.244" size="1.778" layer="96"/>
 </instance>
 <instance part="GND44" gate="1" x="81.28" y="48.26" smashed="yes">
 <attribute name="VALUE" x="78.74" y="45.72" size="1.778" layer="96"/>
@@ -21436,10 +21436,10 @@ by exp-lbrs.ulp</description>
 <pinref part="GND43" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED18" gate="G$1" pin="C"/>
-<wire x1="73.66" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="53.34" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="GND44" gate="1" pin="GND"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="53.34" x2="81.28" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="GND"/>
@@ -21667,20 +21667,6 @@ by exp-lbrs.ulp</description>
 <pinref part="U1" gate="G$1" pin="V3"/>
 <wire x1="50.8" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="TNOW"/>
-<wire x1="50.8" y1="53.34" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="LED18" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="UART1-TX" class="0">
@@ -21919,6 +21905,20 @@ by exp-lbrs.ulp</description>
 <pinref part="U2" gate="A" pin="PA11"/>
 <wire x1="124.46" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
 <label x="101.6" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="LED18" gate="G$1" pin="A"/>
+<pinref part="U1" gate="G$1" pin="TNOW"/>
+<wire x1="55.88" y1="53.34" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="LED18" gate="G$1" pin="C"/>
+<wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -22172,13 +22172,9 @@ by exp-lbrs.ulp</description>
 <segment>
 <wire x1="210.82" y1="58.46" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="58.42" x2="218.44" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="58.42" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <pinref part="J14" gate="A" pin="2"/>
-<pinref part="J14" gate="A" pin="3"/>
-<wire x1="218.44" y1="55.88" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="55.88" x2="218.44" y2="55.88" width="0.1524" layer="91"/>
-<junction x="218.44" y="55.88"/>
+<wire x1="218.44" y1="58.42" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="A" pin="GND"/>
@@ -22513,6 +22509,13 @@ by exp-lbrs.ulp</description>
 <label x="27.94" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="UART4-TX" class="0">
+<segment>
+<pinref part="J14" gate="A" pin="3"/>
+<wire x1="210.82" y1="55.88" x2="220.98" y2="55.88" width="0.1524" layer="91"/>
+<label x="223.52" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -22688,6 +22691,11 @@ by exp-lbrs.ulp</description>
 <wire x1="119.38" y1="157.48" x2="114.3" y2="157.48" width="0.1524" layer="91"/>
 <label x="101.6" y="157.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="CN1" gate="1" pin="8"/>
+<wire x1="215.9" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
+<label x="228.6" y="53.34" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -22786,13 +22794,6 @@ by exp-lbrs.ulp</description>
 <pinref part="CN1" gate="1" pin="4"/>
 </segment>
 </net>
-<net name="LED-FLOOR" class="0">
-<segment>
-<wire x1="215.9" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="CN1" gate="1" pin="6"/>
-<label x="228.6" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SERVO-SIG" class="0">
 <segment>
 <pinref part="CN1" gate="1" pin="7"/>
@@ -22800,25 +22801,25 @@ by exp-lbrs.ulp</description>
 <label x="180.34" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MIRROR" class="0">
+<net name="UART1-TX" class="0">
 <segment>
-<pinref part="CN1" gate="1" pin="8"/>
-<wire x1="215.9" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
-<label x="228.6" y="53.34" size="1.778" layer="95"/>
+<wire x1="231.14" y1="160.02" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
+<label x="241.3" y="160.02" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="G20"/>
 </segment>
 </net>
-<net name="SIG-FLOOR" class="0">
+<net name="UART3-RX" class="0">
 <segment>
 <pinref part="CN1" gate="1" pin="5"/>
 <wire x1="208.28" y1="55.88" x2="198.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="180.34" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UART1-TX" class="0">
+<net name="UART3-TX" class="0">
 <segment>
-<wire x1="231.14" y1="160.02" x2="238.76" y2="160.02" width="0.1524" layer="91"/>
-<label x="241.3" y="160.02" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="G20"/>
+<wire x1="215.9" y1="55.88" x2="226.06" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="CN1" gate="1" pin="6"/>
+<label x="228.6" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
