@@ -21723,20 +21723,6 @@ by exp-lbrs.ulp</description>
 <label x="109.22" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SWDIO" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PA13"/>
-<wire x1="124.46" y1="93.98" x2="116.84" y2="93.98" width="0.1524" layer="91"/>
-<label x="106.68" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SWCLK" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PA14"/>
-<wire x1="124.46" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
-<label x="106.68" y="91.44" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="V3"/>
@@ -21884,13 +21870,6 @@ by exp-lbrs.ulp</description>
 <pinref part="U2" gate="A" pin="PC5"/>
 <wire x1="185.42" y1="114.3" x2="193.04" y2="114.3" width="0.1524" layer="91"/>
 <label x="195.58" y="114.3" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SIG-FLOOR" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PC0"/>
-<wire x1="185.42" y1="127" x2="193.04" y2="127" width="0.1524" layer="91"/>
-<label x="195.58" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED-L" class="0">
@@ -22935,6 +22914,8 @@ by exp-lbrs.ulp</description>
 <approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
 <approved hash="113,2,131.976,90.066,FRAME2,,,,,"/>
 <approved hash="113,3,131.976,90.066,FRAME3,,,,,"/>
+<approved hash="113,1,198.12,161.872,U4,,,,,"/>
+<approved hash="113,3,48.26,107.655,S1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

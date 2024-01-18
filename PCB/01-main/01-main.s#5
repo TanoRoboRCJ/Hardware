@@ -21087,6 +21087,9 @@ by exp-lbrs.ulp</description>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="J2" library="con-molex-5268" deviceset="22057025" device=""/>
+<part name="J3" library="con-molex-5268" deviceset="22057025" device=""/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21331,8 +21334,17 @@ by exp-lbrs.ulp</description>
 <instance part="GND22" gate="1" x="111.76" y="5.08" smashed="yes">
 <attribute name="VALUE" x="109.22" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="A" x="106.68" y="160.02" smashed="yes" rot="MR0">
-<attribute name="NAME" x="102.5144" y="165.3286" size="2.0828" layer="95" ratio="6" rot="SMR0"/>
+<instance part="J2" gate="A" x="96.52" y="165.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="92.3544" y="170.4086" size="2.0828" layer="95" ratio="6" rot="SMR0"/>
+</instance>
+<instance part="J3" gate="A" x="134.62" y="165.1" smashed="yes" rot="MR0">
+<attribute name="NAME" x="130.4544" y="170.4086" size="2.0828" layer="95" ratio="6" rot="SMR0"/>
+</instance>
+<instance part="GND23" gate="1" x="99.06" y="154.94" smashed="yes">
+<attribute name="VALUE" x="96.52" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND25" gate="1" x="137.16" y="154.94" smashed="yes">
+<attribute name="VALUE" x="134.62" y="152.4" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21506,6 +21518,18 @@ by exp-lbrs.ulp</description>
 <wire x1="111.76" y1="10.16" x2="111.76" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="GND22" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J2" gate="A" pin="1"/>
+<wire x1="96.52" y1="165.1" x2="99.06" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="165.1" x2="99.06" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J3" gate="A" pin="1"/>
+<wire x1="134.62" y1="165.1" x2="137.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="165.1" x2="137.16" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="GND25" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -21970,6 +21994,20 @@ by exp-lbrs.ulp</description>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="LED18" gate="G$1" pin="C"/>
 <wire x1="68.58" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CAM-LED-R" class="0">
+<segment>
+<pinref part="J2" gate="A" pin="2"/>
+<wire x1="96.52" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
+<label x="104.14" y="162.56" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CAM-LED-L" class="0">
+<segment>
+<pinref part="J3" gate="A" pin="2"/>
+<wire x1="134.62" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
+<label x="142.24" y="162.56" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -21058,6 +21058,7 @@ by exp-lbrs.ulp</description>
 <text x="2.54" y="139.7" size="5.08" layer="94">USB-C</text>
 <text x="165.1" y="139.7" size="5.08" layer="94">BNO055</text>
 <wire x1="78.74" y1="180.34" x2="78.74" y2="137.16" width="0.1524" layer="94"/>
+<text x="81.28" y="139.7" size="5.08" layer="94">BNO055</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>

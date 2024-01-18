@@ -21900,20 +21900,6 @@ by exp-lbrs.ulp</description>
 <pinref part="U2" gate="A" pin="PA15"/>
 </segment>
 </net>
-<net name="LED-FLOOR" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PB15"/>
-<wire x1="124.46" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
-<label x="101.6" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LED-UI" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PB14"/>
-<wire x1="124.46" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="101.6" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LED-R" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="PB13"/>
@@ -22002,12 +21988,22 @@ by exp-lbrs.ulp</description>
 <wire x1="96.52" y1="162.56" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
 <label x="104.14" y="162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="PB14"/>
+<wire x1="124.46" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<label x="101.6" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="CAM-LED-L" class="0">
 <segment>
 <pinref part="J3" gate="A" pin="2"/>
 <wire x1="134.62" y1="162.56" x2="139.7" y2="162.56" width="0.1524" layer="91"/>
 <label x="142.24" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="PB15"/>
+<wire x1="124.46" y1="48.26" x2="116.84" y2="48.26" width="0.1524" layer="91"/>
+<label x="101.6" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

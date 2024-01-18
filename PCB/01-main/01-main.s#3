@@ -21961,13 +21961,6 @@ by exp-lbrs.ulp</description>
 <label x="195.58" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="MIRROR" class="0">
-<segment>
-<pinref part="U2" gate="A" pin="PA11"/>
-<wire x1="124.46" y1="99.06" x2="116.84" y2="99.06" width="0.1524" layer="91"/>
-<label x="101.6" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="LED18" gate="G$1" pin="A"/>

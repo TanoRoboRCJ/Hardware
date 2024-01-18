@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : /Users/shirokuma89dev/Documents/TanoRoboRCJ/Hardware/PCB/01-main/01-main.brd
 
-Start at      : 18:45:15 (2024/01/18)
-End at        : 19:11:58 (2024/01/18)
-Elapsed time  : 00:26:42
+Start at      : 20:13:22 (2024/01/18)
+End at        : 20:22:55 (2024/01/18)
+Elapsed time  : 00:09:32
 
-Signals       :    62   RoutingGrid: 6.5 mil  Layers: 2
+Signals       :    62   RoutingGrid: 7.5 mil  Layers: 2
 Connections   :   182   predefined:  108 ( 9 Vias )
 
-Router memory :   640424
+Router memory :   483840
 
 Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:22:49  00:03:29  00:00:02  00:00:02  00:00:03  00:00:02  00:00:02  00:00:02  00:00:01  00:00:02  00:00:02  00:00:02  00:00:02  00:00:02
-Number of Ripups  :         0         7         0         0         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         1         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0        11         0         0         0         0         0         0         0         0         0         0         0         0
+Time per pass     :  00:09:05  00:00:04  00:00:02  00:00:02  00:00:01  00:00:03  00:00:02  00:00:02  00:00:02  00:00:02  00:00:02  00:00:02  00:00:02  00:00:01
+Number of Ripups  :         0         6         0         0         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         2         0         0         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0        32         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        13        74        74        74        74        74        74        74        74        74        74        74        74        74
-Vias              :         0        40        39        37        35        34        31        31        32        33        30        29        29        29
-Resolution        :    66.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        12        74        74        73        73        73        73        73        73        73        73        73        73        73
+Vias              :         0        46        46        43        45        45        45        45        45        41        41        41        41        41
+Resolution        :    65.9 %   100.0 %   100.0 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %    99.5 %
 
-Final             : 100.0% finished
+Final             : 99.5% finished
