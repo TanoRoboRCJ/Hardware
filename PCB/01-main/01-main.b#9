@@ -3226,14 +3226,14 @@ by exp-lbrs.ulp</description>
 <signal name="UART3-RX">
 <contactref element="U2" pad="25"/>
 <contactref element="CN1" pad="5"/>
-<wire x1="-5" y1="50.46118125" x2="-5" y2="55" width="0.254" layer="16"/>
+<wire x1="-5" y1="49.96118125" x2="-5" y2="55" width="0.254" layer="16"/>
 <via x="-5" y="55" extent="1-16" drill="0.35"/>
 <wire x1="-5" y1="55" x2="-5" y2="56.42836875" width="0.254" layer="1"/>
 <wire x1="-5" y1="56.42836875" x2="-4.81235625" y2="56.6160125" width="0.254" layer="1"/>
 <wire x1="-4.81235625" y1="56.6160125" x2="-4.81235625" y2="56.9588" width="0.254" layer="1"/>
 <wire x1="-4.81235625" y1="56.9588" x2="-5.242640625" y2="57.389084375" width="0.254" layer="1"/>
-<wire x1="-9.27" y1="36.27" x2="-9.27" y2="46.19118125" width="0.254" layer="16"/>
-<wire x1="-9.27" y1="46.19118125" x2="-5" y2="50.46118125" width="0.254" layer="16"/>
+<wire x1="-9.27" y1="36.27" x2="-9.27" y2="45.69118125" width="0.254" layer="16"/>
+<wire x1="-9.27" y1="45.69118125" x2="-5" y2="49.96118125" width="0.254" layer="16"/>
 </signal>
 <signal name="TOGGLE">
 <contactref element="R4" pad="2"/>

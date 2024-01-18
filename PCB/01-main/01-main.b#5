@@ -3185,19 +3185,19 @@ by exp-lbrs.ulp</description>
 <contactref element="U2" pad="14"/>
 <contactref element="J14" pad="3"/>
 <wire x1="10.9962" y1="30.5" x2="1" y2="40.4962" width="0.254" layer="16"/>
-<wire x1="1" y1="40.4962" x2="1" y2="57" width="0.254" layer="16"/>
-<via x="1" y="57" extent="1-16" drill="0.35"/>
-<wire x1="0.691040625" y1="59.080128125" x2="0.691040625" y2="57.308959375" width="0.254" layer="1"/>
-<wire x1="1" y1="57" x2="0.691040625" y2="57.308959375" width="0.254" layer="1"/>
-<wire x1="0.691040625" y1="59.080128125" x2="1.12131875" y2="59.51040625" width="0.254" layer="1"/>
+<wire x1="1" y1="40.4962" x2="1" y2="56" width="0.254" layer="16"/>
+<via x="1" y="56" extent="1-16" drill="0.35"/>
+<wire x1="0.691040625" y1="59.080128125" x2="0.691040625" y2="56.308959375" width="0.254" layer="1"/>
+<wire x1="1" y1="56" x2="0.691040625" y2="56.308959375" width="0.254" layer="1"/>
+<wire x1="1.12131875" y1="59.51040625" x2="0.691040625" y2="59.080128125" width="0.254" layer="1"/>
 </signal>
 <signal name="UART4-RX">
 <contactref element="U2" pad="15"/>
 <contactref element="J14" pad="4"/>
 <wire x1="8.507" y1="30.5" x2="0" y2="39.007" width="0.254" layer="16"/>
-<wire x1="0" y1="39.007" x2="0" y2="59" width="0.254" layer="16"/>
-<via x="0" y="59" extent="1-16" drill="0.35"/>
-<wire x1="0" y1="59" x2="0" y2="59.09619375" width="0.254" layer="1"/>
+<wire x1="0" y1="39.007" x2="0" y2="57" width="0.254" layer="16"/>
+<via x="0" y="57" extent="1-16" drill="0.35"/>
+<wire x1="0" y1="57" x2="0" y2="59.09619375" width="0.254" layer="1"/>
 <wire x1="0" y1="59.09619375" x2="0.767765625" y2="59.863959375" width="0.254" layer="1"/>
 </signal>
 <signal name="UART6-TX">

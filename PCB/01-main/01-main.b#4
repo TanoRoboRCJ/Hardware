@@ -3136,12 +3136,26 @@ by exp-lbrs.ulp</description>
 <signal name="UART2-TX">
 <contactref element="U2" pad="16"/>
 <contactref element="J8" pad="3"/>
-<wire x1="0.4142125" y1="60.2175125" x2="32.4962" y2="30.5" width="0" layer="19" extent="1-1"/>
+<via x="-1" y="59" extent="1-16" drill="0.35"/>
+<wire x1="32.4962" y1="30.5" x2="10.1502" y2="52.846" width="0.254" layer="16"/>
+<wire x1="10.1502" y1="52.846" x2="9.36199375" y2="52.846" width="0.254" layer="16"/>
+<wire x1="3.20799375" y1="59" x2="-1" y2="59" width="0.254" layer="16"/>
+<wire x1="9.36199375" y1="52.846" x2="3.20799375" y2="59" width="0.254" layer="16"/>
+<wire x1="-1" y1="59" x2="0.2175125" y2="60.2175125" width="0.254" layer="1"/>
+<wire x1="0.2175125" y1="60.2175125" x2="0.4142125" y2="60.2175125" width="0.254" layer="1"/>
 </signal>
 <signal name="UART2-RX">
 <contactref element="U2" pad="17"/>
 <contactref element="J8" pad="4"/>
-<wire x1="30.007" y1="30.5" x2="-2.4142125" y2="60.2175125" width="0" layer="19" extent="1-1"/>
+<wire x1="30.007" y1="30.5" x2="10.201" y2="50.306" width="0.254" layer="16"/>
+<wire x1="10.201" y1="50.306" x2="9.36199375" y2="50.306" width="0.254" layer="16"/>
+<wire x1="9.36199375" y1="50.306" x2="1.66799375" y2="58" width="0.254" layer="16"/>
+<via x="-1" y="58" extent="1-16" drill="0.35"/>
+<wire x1="-1.983934375" y1="59.654859375" x2="-2.4142125" y2="60.0851375" width="0.254" layer="1"/>
+<wire x1="-2.4142125" y1="60.0851375" x2="-2.4142125" y2="60.2175125" width="0.254" layer="1"/>
+<wire x1="-1" y1="58" x2="-1.983934375" y2="58.983934375" width="0.254" layer="1"/>
+<wire x1="-1.983934375" y1="58.983934375" x2="-1.983934375" y2="59.654859375" width="0.254" layer="1"/>
+<wire x1="1.66799375" y1="58" x2="-1" y2="58" width="0.254" layer="16"/>
 </signal>
 <signal name="!RE">
 <contactref element="U5" pad="2"/>
@@ -3188,7 +3202,7 @@ by exp-lbrs.ulp</description>
 <wire x1="1" y1="40.4962" x2="1" y2="56" width="0.254" layer="16"/>
 <via x="1" y="56" extent="1-16" drill="0.35"/>
 <wire x1="0.691040625" y1="59.080128125" x2="0.691040625" y2="56.308959375" width="0.254" layer="1"/>
-<wire x1="1" y1="56" x2="0.691040625" y2="56.308959375" width="0.254" layer="1"/>
+<wire x1="0.691040625" y1="56.308959375" x2="1" y2="56" width="0.254" layer="1"/>
 <wire x1="1.12131875" y1="59.51040625" x2="0.691040625" y2="59.080128125" width="0.254" layer="1"/>
 </signal>
 <signal name="UART4-RX">
