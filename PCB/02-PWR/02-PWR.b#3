@@ -279,9 +279,9 @@
 <circle x="-16.5" y="0" radius="2.4" width="0.001" layer="20"/>
 <circle x="-16.5" y="-65" radius="2.4" width="0.001" layer="20"/>
 <circle x="15.73363125" y="57" radius="2" width="0.001" layer="1"/>
-<circle x="22.757359375" y="-77" radius="2" width="0.001" layer="41"/>
+<circle x="22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
 <circle x="27" y="-4" radius="1.1" width="0.001" layer="20"/>
-<circle x="-22.757359375" y="-77" radius="2" width="0.001" layer="42"/>
+<circle x="-22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
 <circle x="-27" y="-4" radius="1.1" width="0.001" layer="20"/>
 <circle x="-15.73363125" y="57" radius="2" width="0.001" layer="42"/>
 <circle x="-15.73363125" y="57" radius="1.1" width="0.001" layer="20"/>
@@ -292,14 +292,9 @@
 <circle x="-27" y="-4" radius="2.5" width="0.1524" layer="41"/>
 <circle x="27" y="-4" radius="2.5" width="0.1524" layer="41"/>
 <circle x="33.5" y="-28.5" radius="2.5" width="0.1524" layer="41"/>
-<circle x="33.5" y="-54.5" radius="2.5" width="0.1524" layer="42"/>
-<circle x="15.73363125" y="57" radius="1.1" width="0.001" layer="20"/>
-<circle x="15.73363125" y="57" radius="2" width="0.001" layer="41"/>
 <circle x="33.5" y="-54.5" radius="2.5" width="0.1524" layer="41"/>
-<circle x="22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
-<circle x="22.757359375" y="-77" radius="2" width="0.001" layer="42"/>
-<circle x="-22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
-<circle x="-22.757359375" y="-77" radius="2" width="0.001" layer="41"/>
+<circle x="15.73363125" y="57" radius="1.1" width="0.001" layer="20"/>
+<circle x="15.73363125" y="57" radius="2" width="0.001" layer="42"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -3065,6 +3060,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="R17" pad="2"/>
 <contactref element="R19" pad="2"/>
 <contactref element="R18" pad="2"/>
+<wire x1="-5.5" y1="71" x2="-5.5" y2="73" width="0" layer="19" extent="16-16"/>
+<wire x1="-18.81" y1="-76" x2="-5.5" y2="71" width="0" layer="19" extent="16-16"/>
 <wire x1="-6.5" y1="-72.5" x2="-18.81" y2="-76" width="0" layer="19" extent="1-1"/>
 <wire x1="7.5" y1="-75" x2="-6.5" y2="-72.5" width="0" layer="19" extent="16-16"/>
 <wire x1="11.19" y1="-76" x2="7.5" y2="-77" width="0" layer="19" extent="16-16"/>
@@ -3082,8 +3079,6 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="3" y1="57" x2="-2.54" y2="52" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.5" y1="57" x2="-2.54" y2="52" width="0" layer="19" extent="1-1"/>
 <wire x1="-12.27" y1="66.19" x2="-10.5" y2="57" width="0" layer="19" extent="1-1"/>
-<wire x1="-5.5" y1="71" x2="-12.27" y2="66.19" width="0" layer="19" extent="16-16"/>
-<wire x1="-5.5" y1="73" x2="-5.5" y2="71" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="JP1" pad="3"/>
@@ -3450,7 +3445,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-13.155840625" y1="41.619" x2="-10.5" y2="38.963159375" width="0.254" layer="16"/>
 <wire x1="-10.5" y1="38.963159375" x2="-10.5" y2="-8.8914875" width="0.254" layer="16"/>
 <contactref element="R19" pad="1"/>
-<wire x1="-12.27" y1="68.73" x2="-6.5" y2="73" width="0" layer="19" extent="16-16"/>
+<wire x1="-2.75" y1="-17.25" x2="-6.5" y2="73" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SDA2">
 <contactref element="JP5" pad="5"/>
@@ -3476,7 +3471,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-15.55701875" y1="53.619" x2="-11.46265625" y2="57.7133625" width="0.254" layer="16"/>
 <wire x1="-11.46265625" y1="57.7133625" x2="-11.46265625" y2="57.81386875" width="0.254" layer="16"/>
 <contactref element="R18" pad="1"/>
-<wire x1="-12.27" y1="71.27" x2="-6.5" y2="71" width="0" layer="19" extent="16-16"/>
+<wire x1="-4.25" y1="-28.75" x2="-6.5" y2="71" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="N$13">
 <contactref element="JP5" pad="2"/>
