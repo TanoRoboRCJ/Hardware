@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="2" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -278,7 +278,7 @@
 <circle x="16.5" y="0" radius="2.4" width="0.001" layer="20"/>
 <circle x="-16.5" y="0" radius="2.4" width="0.001" layer="20"/>
 <circle x="-16.5" y="-65" radius="2.4" width="0.001" layer="20"/>
-<circle x="15.73363125" y="57" radius="2" width="0.001" layer="1"/>
+<circle x="15.73363125" y="57" radius="2" width="0.001" layer="41"/>
 <circle x="22.757359375" y="-77" radius="2" width="0.001" layer="41"/>
 <circle x="27" y="-4" radius="1.1" width="0.001" layer="20"/>
 <circle x="-22.757359375" y="-77" radius="2" width="0.001" layer="42"/>
@@ -292,13 +292,16 @@
 <circle x="33.5" y="-28.5" radius="2.5" width="0.1524" layer="41"/>
 <circle x="33.5" y="-54.5" radius="2.5" width="0.1524" layer="42"/>
 <circle x="15.73363125" y="57" radius="1.1" width="0.001" layer="20"/>
-<circle x="15.73363125" y="57" radius="2" width="0.001" layer="41"/>
+<circle x="15.73363125" y="57" radius="2" width="0.001" layer="42"/>
 <circle x="33.5" y="-54.5" radius="2.5" width="0.1524" layer="41"/>
 <circle x="22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
 <circle x="22.757359375" y="-77" radius="2" width="0.001" layer="42"/>
 <circle x="-22.757359375" y="-77" radius="1.1" width="0.001" layer="20"/>
 <circle x="-22.757359375" y="-77" radius="2" width="0.001" layer="41"/>
 <circle x="-30" y="-39" radius="1.4142125" width="0.1524" layer="22"/>
+<wire x1="-16" y1="-82" x2="-18" y2="-80" width="0.254" layer="42"/>
+<wire x1="1.6" y1="-30.1" x2="1.6" y2="-31" width="0.254" layer="41"/>
+<wire x1="1.6" y1="-31" x2="1.7" y2="-31.1" width="0.254" layer="41"/>
 </plain>
 <libraries>
 <library name="pinhead" urn="urn:adsk.eagle:library:325">
@@ -2315,6 +2318,29 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </package>
 </packages>
 </library>
+<library name="testpad" urn="urn:adsk.eagle:library:385">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TP16R" urn="urn:adsk.eagle:footprint:27925/1" library_version="3">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.6" dy="1.6" layer="1" roundness="100" cream="no"/>
+<text x="-0.8001" y="0.8499" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TP16R" urn="urn:adsk.eagle:package:27969/1" type="box" library_version="3">
+<description>TEST PAD</description>
+<packageinstances>
+<packageinstance name="TP16R"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2771,6 +2797,14 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <attribute name="POPULARITY" value="0" x="-35" y="-33" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="-35" y="-33" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
+<element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="PTR1TP16R" x="41" y="-49.5" smashed="yes" rot="MR0">
+<attribute name="POPULARITY" value="0" x="41" y="-49.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="41" y="-49.5" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" package="TP16R" package3d_urn="urn:adsk.eagle:package:27969/1" value="PTR1TP16R" x="41" y="-52" smashed="yes" rot="MR0">
+<attribute name="POPULARITY" value="0" x="41" y="-52" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="41" y="-52" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -3121,9 +3155,78 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-30" y1="-49.16" x2="-28.6284" y2="-50.5316" width="0.254" layer="16"/>
 <wire x1="-28.6284" y1="-50.5316" x2="-28.6284" y2="-50.55836875" width="0.254" layer="16"/>
 <wire x1="-26.2916" y1="-46.1416" x2="-25" y2="-44.85" width="0.254" layer="16"/>
-<wire x1="-26.2916" y1="-50.55836875" x2="-26.2916" y2="-46.1416" width="0.254" layer="16"/>
-<wire x1="-28" y1="-33.5" x2="-25" y2="-44.85" width="0" layer="19" extent="16-16"/>
-<wire x1="-30" y1="-22.75" x2="-28" y2="-33.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-26.2916" y1="-50.55836875" x2="-26.2916" y2="-50.5" width="0.254" layer="16"/>
+<wire x1="-26.2916" y1="-50.5" x2="-26.2916" y2="-46.1416" width="0.254" layer="16"/>
+<wire x1="-31.25" y1="-32.5" x2="-30" y2="-33.75" width="0.254" layer="16"/>
+<wire x1="-31.25" y1="-24" x2="-31.25" y2="-32.5" width="0.254" layer="16"/>
+<wire x1="-30" y1="-22.75" x2="-31.25" y2="-24" width="0.254" layer="16"/>
+<wire x1="-30" y1="-33.75" x2="-30" y2="-33.85" width="0.254" layer="16"/>
+<wire x1="-26.25" y1="-60.75" x2="-24" y2="-63" width="0.254" layer="16"/>
+<wire x1="-26.25" y1="-50.5" x2="-26.25" y2="-60.75" width="0.254" layer="16"/>
+<wire x1="-26.25" y1="-50.5" x2="-26.2916" y2="-50.5" width="0.254" layer="16"/>
+<polygon width="0.254" layer="1">
+<vertex x="-50" y="80"/>
+<vertex x="50" y="80"/>
+<vertex x="50" y="-90"/>
+<vertex x="-50" y="-90"/>
+</polygon>
+<polygon width="0.254" layer="16">
+<vertex x="-50" y="80"/>
+<vertex x="50" y="80"/>
+<vertex x="50" y="-90"/>
+<vertex x="-50" y="-90"/>
+</polygon>
+<contactref element="TP2" pad="TP"/>
+<via x="42" y="-46" extent="1-16" drill="0.35"/>
+<via x="42" y="-14" extent="1-16" drill="0.35"/>
+<via x="42" y="-30" extent="1-16" drill="0.35"/>
+<via x="-42" y="-46" extent="1-16" drill="0.35"/>
+<via x="-42" y="-14" extent="1-16" drill="0.35"/>
+<via x="-42" y="-30" extent="1-16" drill="0.35"/>
+<via x="-2" y="-46" extent="1-16" drill="0.35"/>
+<via x="2" y="-42" extent="1-16" drill="0.35"/>
+<via x="2" y="-58" extent="1-16" drill="0.35"/>
+<via x="-2.3" y="-62.3" extent="1-16" drill="0.35"/>
+<via x="-7" y="-70" extent="1-16" drill="0.35"/>
+<via x="-7" y="-58" extent="1-16" drill="0.35"/>
+<via x="-8" y="-66" extent="1-16" drill="0.35"/>
+<via x="-8" y="-63" extent="1-16" drill="0.35"/>
+<via x="-11" y="-63" extent="1-16" drill="0.35"/>
+<via x="-11" y="-66" extent="1-16" drill="0.35"/>
+<via x="6" y="-56" extent="1-16" drill="0.35"/>
+<via x="6" y="-32" extent="1-16" drill="0.35"/>
+<via x="2" y="-22" extent="1-16" drill="0.35"/>
+<via x="4" y="-58" extent="1-16" drill="0.35"/>
+<via x="16" y="-80" extent="1-16" drill="0.35"/>
+<via x="0" y="-80" extent="1-16" drill="0.35"/>
+<via x="-20" y="-79" extent="1-16" drill="0.35"/>
+<via x="-8" y="-8" extent="1-16" drill="0.35"/>
+<via x="-6" y="-10" extent="1-16" drill="0.35"/>
+<via x="-9" y="22" extent="1-16" drill="0.35"/>
+<via x="-26" y="44" extent="1-16" drill="0.35"/>
+<via x="-26" y="52" extent="1-16" drill="0.35"/>
+<via x="-28" y="54" extent="1-16" drill="0.35"/>
+<via x="-28" y="42" extent="1-16" drill="0.35"/>
+<via x="-22" y="46" extent="1-16" drill="0.35"/>
+<via x="-10" y="42" extent="1-16" drill="0.35"/>
+<via x="-16" y="52" extent="1-16" drill="0.35"/>
+<via x="-8" y="48" extent="1-16" drill="0.35"/>
+<via x="-4" y="74" extent="1-16" drill="0.35"/>
+<via x="12" y="74" extent="1-16" drill="0.35"/>
+<via x="-4" y="66" extent="1-16" drill="0.35"/>
+<via x="-10" y="64" extent="1-16" drill="0.35"/>
+<via x="-6" y="60" extent="1-16" drill="0.35"/>
+<via x="-6" y="64" extent="1-16" drill="0.35"/>
+<via x="0" y="58" extent="1-16" drill="0.35"/>
+<via x="1" y="0" extent="1-16" drill="0.35"/>
+<via x="1" y="18.5" extent="1-16" drill="0.35"/>
+<via x="-1.9" y="19.4" extent="1-16" drill="0.35"/>
+<via x="-0.7" y="19.4" extent="1-16" drill="0.35"/>
+<via x="-3.1" y="19.4" extent="1-16" drill="0.35"/>
+<via x="-5.3" y="19.5" extent="1-16" drill="0.35"/>
+<via x="-3" y="25.2" extent="1-16" drill="0.35"/>
+<via x="6" y="22" extent="1-16" drill="0.35"/>
+<via x="-4" y="-38" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VDD">
 <contactref element="CN1" pad="2"/>
@@ -3181,6 +3284,16 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="13.5255" y1="-9.7155" x2="13" y2="-9.85" width="0.254" layer="16"/>
 <wire x1="17.526" y1="-9.7155" x2="18" y2="-9.7155" width="0.254" layer="1"/>
 <via x="17.526" y="-9.7155" extent="1-16" drill="0.3"/>
+<contactref element="TP1" pad="TP"/>
+<wire x1="41" y1="-49.5" x2="39.4032" y2="-47.9032" width="0.254" layer="16"/>
+<wire x1="39.4032" y1="-47.9032" x2="39.4032" y2="-29.8329875" width="0.254" layer="16"/>
+<wire x1="27.5968" y1="-29.8329875" x2="27.5968" y2="-46.9424125" width="0.254" layer="16"/>
+<wire x1="25.0392125" y1="-49.5" x2="27.5968" y2="-46.9424125" width="0.254" layer="16"/>
+<wire x1="39.4032" y1="-29.8329875" x2="35.3670125" y2="-25.7968" width="0.254" layer="16"/>
+<wire x1="35.3670125" y1="-25.7968" x2="31.6329875" y2="-25.7968" width="0.254" layer="16"/>
+<wire x1="31.6329875" y1="-25.7968" x2="27.5968" y2="-29.8329875" width="0.254" layer="16"/>
+<wire x1="24" y1="-50.5" x2="25" y2="-49.5" width="0.254" layer="16"/>
+<wire x1="25" y1="-49.5" x2="25.0392125" y2="-49.5" width="0.254" layer="16"/>
 </signal>
 <signal name="LOADCELL-L">
 <contactref element="CN1" pad="4"/>
@@ -3397,7 +3510,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-15.24" y1="-22.6695" x2="-15.0495" y2="-22.6695" width="0.254" layer="16"/>
 <wire x1="-15.621" y1="-23.0505" x2="-15.24" y2="-22.6695" width="0.254" layer="16"/>
 <wire x1="-15.621" y1="-24.765" x2="-15.621" y2="-23.0505" width="0.254" layer="16"/>
-<wire x1="-13.716" y1="-26.67" x2="-15.621" y2="-24.765" width="0.254" layer="16"/>
+<wire x1="-13.716" y1="-26.67" x2="-15.443" y2="-24.943" width="0.254" layer="16"/>
+<wire x1="-15.443" y1="-24.943" x2="-15.621" y2="-24.765" width="0.254" layer="16"/>
 <wire x1="-10.8585" y1="-26.67" x2="-13.716" y2="-26.67" width="0.254" layer="16"/>
 <wire x1="-15.0495" y1="-22.6695" x2="-15" y2="-22.5" width="0.254" layer="16"/>
 <wire x1="-10.8585" y1="-26.67" x2="-10.75" y2="-26.75" width="0.254" layer="16"/>
@@ -3436,11 +3550,6 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-12.192" y1="-53.9115" x2="-12.27" y2="-53.81" width="0.254" layer="16"/>
 <wire x1="-3.2385" y1="40.9575" x2="-4.0005" y2="41.7195" width="0.254" layer="16"/>
 <wire x1="-3.2385" y1="26.8605" x2="-3.2385" y2="40.9575" width="0.254" layer="1"/>
-<wire x1="-0.1905" y1="23.8125" x2="-3.2385" y2="26.8605" width="0.254" layer="1"/>
-<wire x1="-0.1905" y1="-5.1435" x2="-0.1905" y2="23.8125" width="0.254" layer="1"/>
-<wire x1="-3.81" y1="-8.763" x2="-0.1905" y2="-5.1435" width="0.254" layer="1"/>
-<wire x1="-3.81" y1="-20.574" x2="-3.81" y2="-8.763" width="0.254" layer="1"/>
-<wire x1="3.429" y1="-27.813" x2="-3.81" y2="-20.574" width="0.254" layer="1"/>
 <wire x1="-4.0005" y1="41.7195" x2="-4.05" y2="41.806" width="0.254" layer="16"/>
 <via x="-4.0005" y="49.149" extent="1-16" drill="0.3"/>
 <via x="6.096" y="50.8635" extent="1-16" drill="0.3"/>
@@ -3454,8 +3563,19 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="R24" pad="1"/>
 <contactref element="R23" pad="1"/>
 <wire x1="-31" y1="-43.5" x2="-29" y2="-43.5" width="0.254" layer="16"/>
-<wire x1="-24.92" y1="-28.84" x2="-29" y2="-43.5" width="0" layer="19" extent="16-16"/>
-<wire x1="-15" y1="-22.5" x2="-24.92" y2="-28.84" width="0" layer="19" extent="16-16"/>
+<wire x1="-25" y1="-39.5" x2="-29" y2="-43.5" width="0.254" layer="16"/>
+<wire x1="-25" y1="-29" x2="-25" y2="-39.5" width="0.254" layer="16"/>
+<wire x1="-25" y1="-29" x2="-24.92" y2="-28.84" width="0.254" layer="16"/>
+<wire x1="-21.25" y1="-25.25" x2="-24.75" y2="-28.75" width="0.254" layer="1"/>
+<wire x1="-15.75" y1="-25.25" x2="-21.25" y2="-25.25" width="0.254" layer="1"/>
+<wire x1="-15.443" y1="-24.943" x2="-15.75" y2="-25.25" width="0.254" layer="16"/>
+<wire x1="-24.75" y1="-28.75" x2="-24.92" y2="-28.84" width="0.254" layer="1"/>
+<via x="-15.75" y="-25.25" extent="1-16" drill="0.3"/>
+<wire x1="3.429" y1="-27.813" x2="-3.7187" y2="-20.6653" width="0.254" layer="1"/>
+<wire x1="-3.7187" y1="-20.6653" x2="-3.7187" y2="-8.6717" width="0.254" layer="1"/>
+<wire x1="-3.7187" y1="-8.6717" x2="-0.1930375" y2="-5.1460375" width="0.254" layer="1"/>
+<wire x1="-0.1930375" y1="-5.1460375" x2="-0.1930375" y2="23.8150375" width="0.254" layer="1"/>
+<wire x1="-0.1930375" y1="23.8150375" x2="-3.2385" y2="26.8605" width="0.254" layer="1"/>
 </signal>
 <signal name="SCL">
 <contactref element="JP1" pad="3"/>
@@ -3528,14 +3648,39 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </signal>
 <signal name="XSHUT1">
 <contactref element="JP2" pad="1"/>
+<contactref element="U2" pad="21"/>
+<wire x1="-6.75" y1="-16.25" x2="-6.75" y2="-17.25" width="0.254" layer="16"/>
+<wire x1="-5.25" y1="-17.75" x2="-6.75" y2="-16.25" width="0.254" layer="1"/>
+<wire x1="-5.25" y1="-26" x2="-5.25" y2="-17.75" width="0.254" layer="1"/>
+<wire x1="-4.5" y1="-26.75" x2="-5.25" y2="-26" width="0.254" layer="1"/>
+<wire x1="-4.5" y1="-31.75" x2="-4.5" y2="-26.75" width="0.254" layer="1"/>
+<wire x1="-6.25" y1="-33.5" x2="-4.5" y2="-31.75" width="0.254" layer="1"/>
+<wire x1="-6.25" y1="-62" x2="-6.25" y2="-33.5" width="0.254" layer="16"/>
+<wire x1="0.75" y1="-69" x2="-6.25" y2="-62" width="0.254" layer="1"/>
+<wire x1="13.5" y1="-69" x2="0.75" y2="-69" width="0.254" layer="1"/>
+<wire x1="16" y1="-71.5" x2="13.5" y2="-69" width="0.254" layer="1"/>
+<wire x1="16" y1="-71.5" x2="16.23" y2="-71.675" width="0.254" layer="1"/>
+<via x="-6.75" y="-16.25" extent="1-16" drill="0.3"/>
+<via x="-6.25" y="-33.5" extent="1-16" drill="0.3"/>
+<via x="-6.25" y="-62" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="XSHUT2">
 <contactref element="JP4" pad="1"/>
+<contactref element="U2" pad="22"/>
+<wire x1="-6.25" y1="-18.25" x2="-6.25" y2="-17.25" width="0.254" layer="16"/>
+<wire x1="-10" y1="-22" x2="-6.25" y2="-18.25" width="0.254" layer="1"/>
+<wire x1="-15.75" y1="-22" x2="-10" y2="-22" width="0.254" layer="1"/>
+<wire x1="-16.25" y1="-22.5" x2="-15.75" y2="-22" width="0.254" layer="16"/>
+<wire x1="-16.25" y1="-59.5" x2="-16.25" y2="-22.5" width="0.254" layer="16"/>
+<wire x1="-13.75" y1="-62" x2="-16.25" y2="-59.5" width="0.254" layer="16"/>
+<wire x1="-13.75" y1="-72" x2="-13.75" y2="-62" width="0.254" layer="16"/>
+<wire x1="-13.75" y1="-72" x2="-13.77" y2="-72" width="0.254" layer="16"/>
+<via x="-6.25" y="-18.25" extent="1-16" drill="0.3"/>
+<via x="-15.75" y="-22" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="N$1">
 <contactref element="J5" pad="3"/>
 <contactref element="R2" pad="1"/>
-<wire x1="-8.9962" y1="53.9538" x2="-9" y2="53.95" width="0.508" layer="16"/>
 <wire x1="-5.4962" y1="57" x2="-5.95" y2="57" width="0.508" layer="16"/>
 <wire x1="-5.95" y1="57" x2="-9" y2="53.95" width="0.508" layer="16"/>
 </signal>
@@ -3647,23 +3792,17 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="SW2" pad="L+_T"/>
 <contactref element="SW2" pad="L+_B"/>
 <contactref element="U2" pad="14"/>
-<wire x1="-11.43" y1="-20.193" x2="-10.8585" y2="-20.193" width="0.254" layer="16"/>
-<wire x1="-13.1445" y1="-18.4785" x2="-11.43" y2="-20.193" width="0.254" layer="16"/>
-<wire x1="-13.1445" y1="-1.905" x2="-13.1445" y2="-18.4785" width="0.254" layer="16"/>
-<wire x1="-11.43" y1="-0.1905" x2="-13.1445" y2="-1.905" width="0.254" layer="16"/>
-<wire x1="-11.43" y1="0.1905" x2="-11.43" y2="-0.1905" width="0.254" layer="16"/>
-<wire x1="-11.811" y1="0.5715" x2="-11.43" y2="0.1905" width="0.254" layer="16"/>
-<wire x1="-12.192" y1="0.5715" x2="-11.811" y2="0.5715" width="0.254" layer="16"/>
-<wire x1="-14.097" y1="-1.3335" x2="-12.192" y2="0.5715" width="0.254" layer="16"/>
-<wire x1="-14.097" y1="-1.524" x2="-14.097" y2="-1.3335" width="0.254" layer="16"/>
-<wire x1="-21.717" y1="-9.144" x2="-14.097" y2="-1.524" width="0.254" layer="16"/>
-<wire x1="-29.9085" y1="-9.144" x2="-28.0035" y2="-9.144" width="0.254" layer="16"/>
-<wire x1="-28.0035" y1="-9.144" x2="-21.717" y2="-9.144" width="0.254" layer="16"/>
-<wire x1="-10.8585" y1="-20.193" x2="-10.75" y2="-20.25" width="0.254" layer="16"/>
-<wire x1="-29.9085" y1="-9.144" x2="-30" y2="-9.25" width="0.254" layer="16"/>
-<wire x1="-28.0035" y1="-9.144" x2="-29.9085" y2="-9.144" width="0.254" layer="1"/>
-<wire x1="-29.9085" y1="-9.144" x2="-30" y2="-9.25" width="0.254" layer="1"/>
-<via x="-28.0035" y="-9.144" extent="1-16" drill="0.3"/>
+<wire x1="-10.807" y1="-20.193" x2="-10.75" y2="-20.25" width="0.254" layer="16"/>
+<wire x1="-10.807" y1="-20.193" x2="-11.4155125" y2="-20.193" width="0.254" layer="16"/>
+<wire x1="-17.6085125" y1="-14" x2="-21" y2="-14" width="0.254" layer="16"/>
+<via x="-21" y="-14" extent="1-16" drill="0.35"/>
+<wire x1="-21" y1="-14" x2="-28" y2="-14" width="0.254" layer="1"/>
+<wire x1="-11.4155125" y1="-20.193" x2="-17.6085125" y2="-14" width="0.254" layer="16"/>
+<wire x1="-28" y1="-14" x2="-30" y2="-12" width="0.254" layer="1"/>
+<wire x1="-30" y1="-12" x2="-30" y2="-9.25" width="0.254" layer="1"/>
+<wire x1="-30" y1="-9.25" x2="-30" y2="-7.7" width="0.254" layer="1"/>
+<via x="-30" y="-7.7" extent="1-16" drill="0.35"/>
+<wire x1="-30" y1="-7.7" x2="-30" y2="-9.25" width="0.254" layer="16"/>
 </signal>
 <signal name="D+">
 <contactref element="X2" pad="B6"/>
@@ -3725,7 +3864,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="X2" pad="B4A9"/>
 <contactref element="X2" pad="A4B9"/>
 <contactref element="LED15" pad="A"/>
-<wire x1="-2.61993125" y1="-77.182" x2="-2.238" y2="-76.80006875" width="0.254" layer="16"/>
+<wire x1="-3.01993125" y1="-77.582" x2="-2.238" y2="-76.80006875" width="0.254" layer="16"/>
 <wire x1="-2.238" y1="-76.80006875" x2="-2.238" y2="-76.25993125" width="0.254" layer="16"/>
 <wire x1="-2.238" y1="-76.25993125" x2="-2.4" y2="-76.09793125" width="0.254" layer="16"/>
 <wire x1="-2.4" y1="-76.09793125" x2="-2.4" y2="-75.455" width="0.254" layer="16"/>
@@ -3735,8 +3874,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="1.47664375" y1="-76.80006875" x2="2.1415" y2="-76.1352125" width="0.254" layer="16"/>
 <wire x1="-7" y1="-79.75" x2="-6.535" y2="-79.285" width="0.254" layer="16"/>
 <wire x1="-6.535" y1="-79.285" x2="-6.33696875" y2="-79.285" width="0.254" layer="16"/>
-<wire x1="-4.23396875" y1="-77.182" x2="-2.61993125" y2="-77.182" width="0.254" layer="16"/>
-<wire x1="-6.33696875" y1="-79.285" x2="-4.23396875" y2="-77.182" width="0.254" layer="16"/>
+<wire x1="-4.63396875" y1="-77.582" x2="-3.01993125" y2="-77.582" width="0.254" layer="16"/>
+<wire x1="-6.33696875" y1="-79.285" x2="-4.63396875" y2="-77.582" width="0.254" layer="16"/>
 </signal>
 <signal name="N$18">
 <contactref element="C1" pad="1"/>
@@ -3780,13 +3919,13 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-6.6675" y1="-28.7655" x2="-6.6675" y2="-30.861" width="0.254" layer="16"/>
 <wire x1="-6.6675" y1="-30.861" x2="-6.5" y2="-31" width="0.254" layer="16"/>
 <wire x1="-6.6675" y1="-28.7655" x2="-6.75" y2="-28.75" width="0.254" layer="16"/>
-<wire x1="-6.477" y1="-31.8135" x2="-6.477" y2="-31.0515" width="0.254" layer="16"/>
 <wire x1="-5.334" y1="-32.9565" x2="-6.477" y2="-31.8135" width="0.254" layer="16"/>
 <wire x1="-5.334" y1="-49.53" x2="-5.334" y2="-32.9565" width="0.254" layer="16"/>
 <wire x1="-4.572" y1="-50.292" x2="-5.334" y2="-49.53" width="0.254" layer="16"/>
-<wire x1="-4.572" y1="-72.39" x2="-4.572" y2="-50.292" width="0.254" layer="16"/>
-<wire x1="-6.477" y1="-31.0515" x2="-6.5" y2="-31" width="0.254" layer="16"/>
-<wire x1="-4.572" y1="-72.39" x2="-4.5" y2="-72.5" width="0.254" layer="16"/>
+<wire x1="-4.5" y1="-72.5" x2="-4.572" y2="-72.428" width="0.254" layer="16"/>
+<wire x1="-4.572" y1="-72.428" x2="-4.572" y2="-50.292" width="0.254" layer="16"/>
+<wire x1="-6.477" y1="-31.8135" x2="-6.477" y2="-31.023" width="0.254" layer="16"/>
+<wire x1="-6.477" y1="-31.023" x2="-6.5" y2="-31" width="0.254" layer="16"/>
 </signal>
 <signal name="+5V">
 <contactref element="U3" pad="7"/>
@@ -3837,10 +3976,10 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="1.39733125" y1="-23.75" x2="0.75" y2="-23.75" width="0.254" layer="16"/>
 <wire x1="-2.1131" y1="-65.5" x2="-2.5973125" y2="-65.5" width="0.254" layer="16"/>
 <wire x1="-2.5973125" y1="-65.5" x2="-2.8671" y2="-65.2302125" width="0.254" layer="16"/>
-<wire x1="3.47850625" y1="-25.831175" x2="1.39733125" y2="-23.75" width="0.254" layer="16"/>
 <wire x1="-2.8671" y1="-65.2302125" x2="-2.8671" y2="-63.98355625" width="0.254" layer="16"/>
-<wire x1="-2.8671" y1="-63.98355625" x2="3.47850625" y2="-57.63795" width="0.254" layer="16"/>
-<wire x1="3.47850625" y1="-57.63795" x2="3.47850625" y2="-25.831175" width="0.254" layer="16"/>
+<wire x1="-2.8671" y1="-63.98355625" x2="2.97850625" y2="-58.13795" width="0.254" layer="16"/>
+<wire x1="2.97850625" y1="-58.13795" x2="2.97850625" y2="-25.331175" width="0.254" layer="16"/>
+<wire x1="2.97850625" y1="-25.331175" x2="1.39733125" y2="-23.75" width="0.254" layer="16"/>
 </signal>
 <signal name="UART1-RX">
 <contactref element="U3" pad="8"/>
@@ -3879,17 +4018,16 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-25.527" y1="-72.39" x2="-26.289" y2="-73.152" width="0.254" layer="16"/>
 <wire x1="25.3365" y1="-73.914" x2="25.5" y2="-73.75" width="0.254" layer="16"/>
 <wire x1="-25.527" y1="-72.39" x2="-25.5" y2="-72.25" width="0.254" layer="16"/>
-<wire x1="1.524" y1="-19.2405" x2="0.762" y2="-19.2405" width="0.254" layer="16"/>
-<wire x1="4.0005" y1="-21.717" x2="1.524" y2="-19.2405" width="0.254" layer="16"/>
-<wire x1="4.0005" y1="-56.5785" x2="4.0005" y2="-21.717" width="0.254" layer="16"/>
 <wire x1="9.525" y1="-62.103" x2="4.0005" y2="-56.5785" width="0.254" layer="16"/>
 <wire x1="16.9545" y1="-69.5325" x2="9.525" y2="-62.103" width="0.254" layer="1"/>
 <wire x1="19.2405" y1="-69.5325" x2="16.9545" y2="-69.5325" width="0.254" layer="1"/>
 <wire x1="21.717" y1="-72.009" x2="19.2405" y2="-69.5325" width="0.254" layer="1"/>
 <wire x1="21.717" y1="-74.8665" x2="21.717" y2="-72.009" width="0.254" layer="16"/>
-<wire x1="0.762" y1="-19.2405" x2="0.75" y2="-19.25" width="0.254" layer="16"/>
 <via x="9.525" y="-62.103" extent="1-16" drill="0.3"/>
 <via x="21.717" y="-72.009" extent="1-16" drill="0.3"/>
+<wire x1="4.0005" y1="-56.5785" x2="4.0005" y2="-21.8919875" width="0.254" layer="16"/>
+<wire x1="4.0005" y1="-21.8919875" x2="1.3585125" y2="-19.25" width="0.254" layer="16"/>
+<wire x1="1.3585125" y1="-19.25" x2="0.75" y2="-19.25" width="0.254" layer="16"/>
 </signal>
 <signal name="N$32">
 <contactref element="LED17" pad="C"/>
@@ -3903,16 +4041,16 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="LED18" pad="A"/>
 <contactref element="U3" pad="6"/>
 <wire x1="-14.478" y1="-79.629" x2="-9.144" y2="-79.629" width="0.254" layer="16"/>
-<wire x1="-17.907" y1="-79.629" x2="-14.478" y2="-79.629" width="0.254" layer="1"/>
-<wire x1="-20.0025" y1="-77.5335" x2="-17.907" y2="-79.629" width="0.254" layer="1"/>
-<wire x1="-20.0025" y1="-74.4855" x2="-20.0025" y2="-77.5335" width="0.254" layer="1"/>
-<wire x1="-13.1445" y1="-67.6275" x2="-20.0025" y2="-74.4855" width="0.254" layer="1"/>
-<wire x1="-2.8575" y1="-67.6275" x2="-13.1445" y2="-67.6275" width="0.254" layer="1"/>
 <wire x1="-2.286" y1="-67.056" x2="-2.8575" y2="-67.6275" width="0.254" layer="16"/>
 <wire x1="-9.144" y1="-79.629" x2="-9" y2="-79.75" width="0.254" layer="16"/>
 <wire x1="-2.286" y1="-67.056" x2="-2.1131" y2="-67" width="0.254" layer="16"/>
 <via x="-14.478" y="-79.629" extent="1-16" drill="0.3"/>
 <via x="-2.8575" y="-67.6275" extent="1-16" drill="0.3"/>
+<wire x1="-2.8575" y1="-67.6275" x2="-13.11181875" y2="-67.6275" width="0.254" layer="1"/>
+<wire x1="-13.11181875" y1="-67.6275" x2="-19.9784" y2="-74.49408125" width="0.254" layer="1"/>
+<wire x1="-19.9784" y1="-74.49408125" x2="-19.9784" y2="-77.39836875" width="0.254" layer="1"/>
+<wire x1="-19.9784" y1="-77.39836875" x2="-17.74776875" y2="-79.629" width="0.254" layer="1"/>
+<wire x1="-17.74776875" y1="-79.629" x2="-14.478" y2="-79.629" width="0.254" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="R14" pad="2"/>
@@ -4030,7 +4168,18 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-25" y1="-43.15" x2="-26.65" y2="-43.15" width="0.254" layer="16"/>
 <wire x1="-26.65" y1="-43.15" x2="-27" y2="-43.5" width="0.254" layer="16"/>
 <contactref element="U2" pad="50"/>
-<wire x1="-1.75" y1="-28.75" x2="-25" y2="-43.15" width="0" layer="19" extent="16-16"/>
+<wire x1="-1.75" y1="-29.75" x2="-1.75" y2="-28.75" width="0.254" layer="16"/>
+<wire x1="-6" y1="-34" x2="-1.75" y2="-29.75" width="0.254" layer="1"/>
+<wire x1="-14.5" y1="-34" x2="-6" y2="-34" width="0.254" layer="1"/>
+<wire x1="-15.75" y1="-35.25" x2="-14.5" y2="-34" width="0.254" layer="16"/>
+<wire x1="-22.75" y1="-42.25" x2="-15.75" y2="-35.25" width="0.254" layer="1"/>
+<wire x1="-24.25" y1="-42.25" x2="-22.75" y2="-42.25" width="0.254" layer="1"/>
+<wire x1="-25" y1="-43" x2="-24.25" y2="-42.25" width="0.254" layer="16"/>
+<wire x1="-25" y1="-43" x2="-25" y2="-43.15" width="0.254" layer="16"/>
+<via x="-1.75" y="-29.75" extent="1-16" drill="0.3"/>
+<via x="-14.5" y="-34" extent="1-16" drill="0.3"/>
+<via x="-15.75" y="-35.25" extent="1-16" drill="0.3"/>
+<via x="-24.25" y="-42.25" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="ENC_SW">
 <contactref element="JP8" pad="3"/>
@@ -4040,7 +4189,12 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-28" y1="-32.5" x2="-29.65" y2="-32.5" width="0.254" layer="16"/>
 <wire x1="-29.65" y1="-32.5" x2="-30" y2="-32.15" width="0.254" layer="16"/>
 <contactref element="U2" pad="59"/>
-<wire x1="-6.25" y1="-28.75" x2="-28" y2="-32.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-6.25" y1="-26.5" x2="-6.25" y2="-28.75" width="0.254" layer="16"/>
+<via x="-6.25" y="-26.5" extent="1-16" drill="0.3"/>
+<wire x1="-30" y1="-28.84" x2="-30" y2="-28.81323125" width="0.254" layer="1"/>
+<wire x1="-30" y1="-28.81323125" x2="-24.80576875" y2="-23.619" width="0.254" layer="1"/>
+<wire x1="-24.80576875" y1="-23.619" x2="-9.131" y2="-23.619" width="0.254" layer="1"/>
+<wire x1="-9.131" y1="-23.619" x2="-6.25" y2="-26.5" width="0.254" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="JP7" pad="4"/>
@@ -4062,24 +4216,52 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <contactref element="C9" pad="1"/>
 <contactref element="R22" pad="1"/>
 <wire x1="-35" y1="-43.15" x2="-33.35" y2="-43.15" width="0.254" layer="16"/>
-<wire x1="-33.35" y1="-43.15" x2="-33" y2="-43.5" width="0.254" layer="16"/>
+<wire x1="-33.35" y1="-43.15" x2="-33.25" y2="-43.25" width="0.254" layer="16"/>
 <contactref element="U2" pad="49"/>
-<wire x1="-1.25" y1="-28.75" x2="-33" y2="-43.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-1.25" y1="-28" x2="-1.25" y2="-28.75" width="0.254" layer="16"/>
+<wire x1="-6.75" y1="-22.5" x2="-1.25" y2="-28" width="0.254" layer="16"/>
+<wire x1="-23" y1="-22.5" x2="-6.75" y2="-22.5" width="0.254" layer="1"/>
+<wire x1="-26.25" y1="-25.75" x2="-23" y2="-22.5" width="0.254" layer="16"/>
+<wire x1="-26.25" y1="-36.25" x2="-26.25" y2="-25.75" width="0.254" layer="16"/>
+<wire x1="-33.25" y1="-43.25" x2="-26.25" y2="-36.25" width="0.254" layer="16"/>
+<wire x1="-33.25" y1="-43.25" x2="-33" y2="-43.5" width="0.254" layer="16"/>
+<via x="-6.75" y="-22.5" extent="1-16" drill="0.3"/>
+<via x="-23" y="-22.5" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="LED_G">
 <contactref element="JP8" pad="2"/>
 <contactref element="U2" pad="57"/>
-<wire x1="-5.25" y1="-28.75" x2="-32.54" y2="-28.84" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.25" y1="-26.75" x2="-5.25" y2="-28.75" width="0.254" layer="16"/>
+<via x="-5.25" y="-26.75" extent="1-16" drill="0.3"/>
+<wire x1="-32.54" y1="-28.84" x2="-32.54" y2="-28.81323125" width="0.254" layer="1"/>
+<wire x1="-32.54" y1="-28.81323125" x2="-26.84576875" y2="-23.119" width="0.254" layer="1"/>
+<wire x1="-26.84576875" y1="-23.119" x2="-8.881" y2="-23.119" width="0.254" layer="1"/>
+<wire x1="-8.881" y1="-23.119" x2="-5.25" y2="-26.75" width="0.254" layer="1"/>
 </signal>
 <signal name="LED_B">
 <contactref element="JP8" pad="4"/>
 <contactref element="U2" pad="58"/>
-<wire x1="-5.75" y1="-28.75" x2="-27.46" y2="-28.84" width="0" layer="19" extent="16-16"/>
+<wire x1="-5.75" y1="-27.75" x2="-5.75" y2="-28.75" width="0.254" layer="16"/>
+<via x="-5.75" y="-27.75" extent="1-16" drill="0.3"/>
+<wire x1="-27.46" y1="-28.84" x2="-27.46" y2="-28.81323125" width="0.254" layer="1"/>
+<wire x1="-27.46" y1="-28.81323125" x2="-22.74106875" y2="-24.0943" width="0.254" layer="1"/>
+<wire x1="-22.74106875" y1="-24.0943" x2="-9.4057" y2="-24.0943" width="0.254" layer="1"/>
+<wire x1="-9.4057" y1="-24.0943" x2="-5.75" y2="-27.75" width="0.254" layer="1"/>
 </signal>
 <signal name="LED_R">
 <contactref element="R20" pad="2"/>
 <contactref element="U2" pad="56"/>
-<wire x1="-4.75" y1="-28.75" x2="-35" y2="-33.5" width="0" layer="19" extent="16-16"/>
+<wire x1="-31" y1="-33.5" x2="-35" y2="-33.5" width="0.254" layer="16"/>
+<wire x1="-15.75" y1="-33.5" x2="-31" y2="-33.5" width="0.254" layer="1"/>
+<wire x1="-10.25" y1="-33.5" x2="-15.75" y2="-33.5" width="0.254" layer="16"/>
+<wire x1="-6.5" y1="-29.75" x2="-10.25" y2="-33.5" width="0.254" layer="1"/>
+<wire x1="-5" y1="-29.75" x2="-6.5" y2="-29.75" width="0.254" layer="1"/>
+<wire x1="-4.75" y1="-29.5" x2="-5" y2="-29.75" width="0.254" layer="16"/>
+<wire x1="-4.75" y1="-28.75" x2="-4.75" y2="-29.5" width="0.254" layer="16"/>
+<via x="-31" y="-33.5" extent="1-16" drill="0.3"/>
+<via x="-15.75" y="-33.5" extent="1-16" drill="0.3"/>
+<via x="-10.25" y="-33.5" extent="1-16" drill="0.3"/>
+<via x="-5" y="-29.75" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="N$23">
 <contactref element="R20" pad="1"/>
@@ -4095,6 +4277,10 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFE5E5E5"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,16,820f27c90d6d49fe"/>
+<approved hash="4,16,d9e639ba1baad77a"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
