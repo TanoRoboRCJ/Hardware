@@ -2430,7 +2430,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-16.015965625" y1="24.99621875" x2="-17.3241125" y2="18.031221875" width="0" layer="19" extent="16-16"/>
 <wire x1="-28.999996875" y1="6.35" x2="-22.90564375" y2="10.029021875" width="0" layer="19" extent="16-16"/>
 <wire x1="6.75" y1="11" x2="-3.575" y2="11.13" width="0" layer="19" extent="16-16"/>
-<wire x1="-6" y1="10.5" x2="-11.5" y2="-10" width="0" layer="19" extent="16-16"/>
+<wire x1="-11.5" y1="-10" x2="-6" y2="10.5" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="6"/>
