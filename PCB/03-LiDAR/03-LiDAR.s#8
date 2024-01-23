@@ -22463,14 +22463,7 @@ See DataSheet：
 <label x="101.6" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="TX" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB08_A6_D6_TX"/>
-<wire x1="182.88" y1="49.53" x2="179.07" y2="49.53" width="0.1524" layer="91"/>
-<label x="172.72" y="49.53" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RX" class="0">
+<net name="UART4-TX" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB09_A7_D7_RX"/>
 <wire x1="232.41" y1="49.53" x2="251.46" y2="49.53" width="0.1524" layer="91"/>
@@ -22531,6 +22524,13 @@ See DataSheet：
 <pinref part="U2" gate="G$1" pin="IO1_0"/>
 <wire x1="93.98" y1="43.18" x2="99.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="101.6" y="43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART4-RX" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB08_A6_D6_TX"/>
+<wire x1="182.88" y1="49.53" x2="179.07" y2="49.53" width="0.1524" layer="91"/>
+<label x="172.72" y="49.53" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

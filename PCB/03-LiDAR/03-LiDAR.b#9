@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
@@ -2772,6 +2772,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="16.60458125" y1="-25.39541875" x2="17.670896875" y2="-25.39541875" width="0.254" layer="16"/>
 <wire x1="17.670896875" y1="-25.39541875" x2="19" y2="-24.066315625" width="0.254" layer="16"/>
 <wire x1="19" y1="-24.066315625" x2="19" y2="-22.85" width="0.254" layer="16"/>
+<contactref element="JP1" pad="4"/>
 <wire x1="-25.314421875" y1="-28.637828125" x2="-25.314421875" y2="-28.637825" width="0" layer="19" extent="1-1"/>
 <wire x1="28.637821875" y1="-25.314421875" x2="28.637821875" y2="-25.314425" width="0" layer="19" extent="1-1"/>
 <wire x1="14.617796875" y1="25.33448125" x2="17.0398375" y2="34.21386875" width="0" layer="19" extent="1-1"/>
@@ -2788,6 +2789,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-2.275" y1="16.87" x2="3.575" y2="16.87" width="0" layer="19" extent="16-16"/>
 <wire x1="-2.925" y1="16.87" x2="-2.275" y2="16.87" width="0" layer="19" extent="16-16"/>
 <wire x1="-1.625" y1="11.13" x2="-2.275" y2="16.87" width="0" layer="19" extent="16-16"/>
+<wire x1="3.81" y1="-50.8" x2="5" y2="-44.3131" width="0" layer="19" extent="16-16"/>
 <wire x1="14.5" y1="2" x2="9.8" y2="9" width="0" layer="19" extent="16-16"/>
 <wire x1="29" y1="-3.81" x2="20.32" y2="0.635" width="0" layer="19" extent="16-16"/>
 <wire x1="37.45829375" y1="-7.60401875" x2="29" y2="-3.81" width="0" layer="19" extent="1-1"/>
@@ -3032,19 +3034,22 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="16.6564" y1="-22.6564" x2="16.0478875" y2="-22.6564" width="0.254" layer="16"/>
 <wire x1="16.0478875" y1="-22.6564" x2="15.24" y2="-21.8485125" width="0.254" layer="16"/>
 <wire x1="15.24" y1="-21.8485125" x2="15.24" y2="-16.25" width="0.254" layer="16"/>
-<wire x1="10.029025" y1="22.90564375" x2="16.964453125" y2="24.362465625" width="0" layer="19" extent="16-16"/>
+<wire x1="26.67" y1="-4.31" x2="28.71" y2="-6.35" width="0.254" layer="16"/>
+<wire x1="28.71" y1="-6.35" x2="29" y2="-6.35" width="0.254" layer="16"/>
+<contactref element="JP1" pad="3"/>
+<wire x1="-13" y1="-45" x2="1.27" y2="-50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="-4.31" x2="16.398959375" y2="-12.39895625" width="0" layer="19" extent="16-16"/>
+<wire x1="29.22254375" y1="5.23118125" x2="26.67" y2="-4.31" width="0" layer="19" extent="16-16"/>
+<wire x1="23.28833125" y1="9.10514375" x2="29.22254375" y2="5.23118125" width="0" layer="19" extent="16-16"/>
+<wire x1="16.964453125" y1="24.362465625" x2="10.029025" y2="22.90564375" width="0" layer="19" extent="16-16"/>
 <wire x1="24.996221875" y1="16.01596875" x2="18.031225" y2="17.3241125" width="0" layer="19" extent="16-16"/>
 <wire x1="6.35" y1="29" x2="0.5" y2="25" width="0" layer="19" extent="16-16"/>
-<wire x1="29.22254375" y1="5.23118125" x2="23.28833125" y2="9.10514375" width="0" layer="19" extent="16-16"/>
 <wire x1="-5.23118125" y1="29.22254375" x2="0.5" y2="25" width="0" layer="19" extent="16-16"/>
 <wire x1="-9.105146875" y1="23.288328125" x2="-5.23118125" y2="29.22254375" width="0" layer="19" extent="16-16"/>
 <wire x1="-3.575" y1="11.13" x2="-6" y2="10.5" width="0" layer="19" extent="16-16"/>
 <wire x1="-24.362465625" y1="16.964453125" x2="-22.90564375" y2="10.029021875" width="0" layer="19" extent="16-16"/>
 <wire x1="-16.015965625" y1="24.99621875" x2="-17.3241125" y2="18.031221875" width="0" layer="19" extent="16-16"/>
 <wire x1="-28.999996875" y1="6.35" x2="-22.90564375" y2="10.029021875" width="0" layer="19" extent="16-16"/>
-<wire x1="26.67" y1="-4.31" x2="29.22254375" y2="5.23118125" width="0" layer="19" extent="16-16"/>
-<wire x1="29" y1="-6.35" x2="26.67" y2="-4.31" width="0" layer="19" extent="16-16"/>
-<wire x1="16.398959375" y1="-12.39895625" x2="26.67" y2="-4.31" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="SCL">
 <contactref element="U1" pad="6"/>
@@ -3117,6 +3122,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-21" y1="18.270015625" x2="-20.17221875" y2="19.097796875" width="0.381" layer="16"/>
 <wire x1="-21" y1="17.577640625" x2="-21" y2="18.270015625" width="0.381" layer="16"/>
 <wire x1="-3.88" y1="6.165" x2="-3.87111875" y2="6.165" width="0.381" layer="16"/>
+<contactref element="JP1" pad="2"/>
+<wire x1="-3.88" y1="6.165" x2="-1.27" y2="-50.8" width="0" layer="19" extent="16-16"/>
 <wire x1="-9.924490625" y1="27.2785125" x2="-6" y2="14.5" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="X1" class="2">
@@ -3206,6 +3213,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="-11.1595" y1="0.8405" x2="-18.85890625" y2="0.8405" width="0.381" layer="16"/>
 <wire x1="-19.73750625" y1="-0.0381" x2="-26.970275" y2="-0.0381" width="0.381" layer="16"/>
 <wire x1="-6.42" y1="5.58" x2="-11.1595" y2="0.8405" width="0.381" layer="16"/>
+<contactref element="JP1" pad="1"/>
+<wire x1="-28.999996875" y1="-1.27" x2="-3.81" y2="-50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-29" y1="-1" x2="-28.999996875" y2="-1.27" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VDD" class="1">
@@ -3613,6 +3622,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="0" y1="-23.8842125" x2="0" y2="-23.795" width="0.254" layer="1"/>
 <wire x1="3.7939" y1="-21.4" x2="3.294" y2="-21.8999" width="0.254" layer="1"/>
 <wire x1="3.294" y1="-21.8999" x2="3.294" y2="-24.10731875" width="0.254" layer="1"/>
+<contactref element="U1" pad="8"/>
+<wire x1="-1.34" y1="-10" x2="5.25" y2="-20.25" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="UART5-TX">
 <contactref element="U3" pad="53"/>
@@ -3630,9 +3641,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </signal>
 <signal name="UART4-TX">
 <contactref element="U3" pad="14"/>
-<contactref element="U1" pad="8"/>
 <wire x1="4.16" y1="-8" x2="2.16" y2="-10" width="0.254" layer="16"/>
-<wire x1="2.16" y1="-10" x2="-1.34" y2="-10" width="0.254" layer="16"/>
 <wire x1="13.75" y1="-13.25" x2="13.75" y2="-10.2407875" width="0.254" layer="16"/>
 <wire x1="13.75" y1="-10.2407875" x2="11.5092125" y2="-8" width="0.254" layer="16"/>
 <wire x1="11.5092125" y1="-8" x2="4.16" y2="-8" width="0.254" layer="16"/>
@@ -3690,6 +3699,16 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </signal>
 <signal name="LIDAR_PWM">
 <contactref element="TP8" pad="TP"/>
+<contactref element="U3" pad="22"/>
+<wire x1="16.75" y1="-17.75" x2="16.8436" y2="-17.6564" width="0.254" layer="16"/>
+<wire x1="16.8436" y1="-17.6564" x2="17.4521125" y2="-17.6564" width="0.254" layer="16"/>
+<wire x1="17.4521125" y1="-17.6564" x2="19.6675" y2="-15.4410125" width="0.254" layer="16"/>
+<wire x1="19.6675" y1="-15.4410125" x2="19.6675" y2="-10.08131875" width="0.254" layer="16"/>
+<wire x1="19.6675" y1="-10.08131875" x2="20.701" y2="-9.04781875" width="0.254" layer="16"/>
+<wire x1="20.701" y1="-2.59031875" x2="21.074" y2="-2.21731875" width="0.254" layer="16"/>
+<wire x1="21.074" y1="-2.21731875" x2="21.074" y2="-1.389" width="0.254" layer="16"/>
+<wire x1="21.074" y1="-1.389" x2="20.32" y2="-0.635" width="0.254" layer="16"/>
+<wire x1="20.701" y1="-9.04781875" x2="20.701" y2="-2.59031875" width="0.254" layer="16"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

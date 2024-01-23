@@ -21781,6 +21781,8 @@ See DataSheet：
 <part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
+<part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="+3V25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21793,6 +21795,7 @@ See DataSheet：
 <wire x1="99.06" y1="83.82" x2="0" y2="83.82" width="0.1524" layer="94"/>
 <wire x1="162.56" y1="83.82" x2="264.16" y2="83.82" width="0.1524" layer="94"/>
 <wire x1="99.06" y1="83.82" x2="99.06" y2="0" width="0.1524" layer="94"/>
+<text x="101.6" y="2.54" size="6.4516" layer="94">OLED</text>
 </plain>
 <instances>
 <instance part="VL1" gate="G$1" x="43.18" y="162.56" smashed="yes"/>
@@ -21975,6 +21978,12 @@ See DataSheet：
 <attribute name="NAME" x="140.97" y="43.815" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="27.94" size="1.778" layer="96"/>
 </instance>
+<instance part="GND39" gate="1" x="137.16" y="25.4" smashed="yes">
+<attribute name="VALUE" x="134.62" y="22.86" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V25" gate="G$1" x="137.16" y="50.8" smashed="yes">
+<attribute name="VALUE" x="139.7" y="48.26" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -22059,6 +22068,12 @@ See DataSheet：
 <pinref part="U2" gate="G$1" pin="A1"/>
 <wire x1="33.02" y1="58.42" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
 <junction x="15.24" y="58.42"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="144.78" y1="33.02" x2="137.16" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="33.02" x2="137.16" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="GND39" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -22206,6 +22221,12 @@ See DataSheet：
 <wire x1="180.34" y1="99.06" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="+3V29" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="144.78" y1="35.56" x2="137.16" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="+3V25" gate="G$1" pin="+3V3"/>
+<wire x1="137.16" y1="35.56" x2="137.16" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -22267,6 +22288,11 @@ See DataSheet：
 <wire x1="160.02" y1="99.06" x2="165.1" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <label x="152.4" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="2"/>
+<wire x1="144.78" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<label x="124.46" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="X1" class="2">
@@ -22345,6 +22371,11 @@ See DataSheet：
 <wire x1="160.02" y1="109.22" x2="165.1" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <label x="152.4" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="132.08" y1="40.64" x2="144.78" y2="40.64" width="0.1524" layer="91"/>
+<label x="124.46" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="X2" class="2">
@@ -22475,13 +22506,6 @@ See DataSheet：
 <label x="76.2" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="UART4-TX" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB09_A7_D7_RX"/>
-<wire x1="232.41" y1="49.53" x2="251.46" y2="49.53" width="0.1524" layer="91"/>
-<label x="254" y="49.53" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="X10" class="2">
 <segment>
 <pinref part="U2" gate="G$1" pin="IO1_1"/>
@@ -22543,6 +22567,13 @@ See DataSheet：
 <pinref part="U1" gate="G$1" pin="PB08_A6_D6_TX"/>
 <wire x1="182.88" y1="49.53" x2="179.07" y2="49.53" width="0.1524" layer="91"/>
 <label x="172.72" y="49.53" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="UART5-RX" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PB09_A7_D7_RX"/>
+<wire x1="232.41" y1="49.53" x2="243.84" y2="49.53" width="0.1524" layer="91"/>
+<label x="246.38" y="49.53" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
