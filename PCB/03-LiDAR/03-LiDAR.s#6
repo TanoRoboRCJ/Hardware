@@ -20769,36 +20769,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LED19" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED20" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED21" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND37" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED22" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED23" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND39" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED24" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND40" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED28" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND49" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED29" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND50" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED30" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND51" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED31" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED32" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LED9" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -20808,15 +20778,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LED18" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED25" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND45" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED26" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND47" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="LED27" library="microbuilder" deviceset="WS2812B" device="_5050N"/>
-<part name="GND48" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="VL1" library="VL53L0X" deviceset="VL53L0X" device=""/>
 <part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -22309,7 +22270,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="FRAME3" gate="G$2" x="162.56" y="0" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="175.26" y="1.27" size="2.54" layer="94"/>
 <attribute name="SHEET" x="248.92" y="1.27" size="2.54" layer="94"/>
-<attribute name="DRAWING_NAME" x="180.34" y="19.05" size="2.54" layer="94"/>
 </instance>
 <instance part="LED1" gate="G$1" x="35.56" y="152.4" smashed="yes"/>
 <instance part="GND1" gate="1" x="35.56" y="139.7" smashed="yes">
@@ -22423,76 +22383,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+21" gate="1" x="40.64" y="83.82" smashed="yes">
 <attribute name="VALUE" x="33.02" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="LED20" gate="G$1" x="60.96" y="66.04" smashed="yes"/>
-<instance part="GND36" gate="1" x="60.96" y="53.34" smashed="yes">
-<attribute name="VALUE" x="58.42" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+22" gate="1" x="66.04" y="83.82" smashed="yes">
-<attribute name="VALUE" x="58.42" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED21" gate="G$1" x="86.36" y="66.04" smashed="yes"/>
-<instance part="GND37" gate="1" x="86.36" y="53.34" smashed="yes">
-<attribute name="VALUE" x="83.82" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+23" gate="1" x="91.44" y="83.82" smashed="yes">
-<attribute name="VALUE" x="83.82" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED22" gate="G$1" x="111.76" y="66.04" smashed="yes"/>
-<instance part="GND38" gate="1" x="111.76" y="53.34" smashed="yes">
-<attribute name="VALUE" x="109.22" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+24" gate="1" x="116.84" y="83.82" smashed="yes">
-<attribute name="VALUE" x="109.22" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED23" gate="G$1" x="137.16" y="66.04" smashed="yes"/>
-<instance part="GND39" gate="1" x="137.16" y="53.34" smashed="yes">
-<attribute name="VALUE" x="134.62" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+25" gate="1" x="142.24" y="83.82" smashed="yes">
-<attribute name="VALUE" x="134.62" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED24" gate="G$1" x="162.56" y="66.04" smashed="yes"/>
-<instance part="GND40" gate="1" x="162.56" y="53.34" smashed="yes">
-<attribute name="VALUE" x="160.02" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+26" gate="1" x="167.64" y="83.82" smashed="yes">
-<attribute name="VALUE" x="160.02" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED28" gate="G$1" x="35.56" y="22.86" smashed="yes"/>
-<instance part="GND49" gate="1" x="35.56" y="10.16" smashed="yes">
-<attribute name="VALUE" x="33.02" y="7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="P+31" gate="1" x="40.64" y="40.64" smashed="yes">
-<attribute name="VALUE" x="33.02" y="38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="LED29" gate="G$1" x="60.96" y="22.86" smashed="yes"/>
-<instance part="GND50" gate="1" x="60.96" y="10.16" smashed="yes">
-<attribute name="VALUE" x="58.42" y="7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="P+32" gate="1" x="66.04" y="40.64" smashed="yes">
-<attribute name="VALUE" x="58.42" y="38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="LED30" gate="G$1" x="86.36" y="22.86" smashed="yes"/>
-<instance part="GND51" gate="1" x="86.36" y="10.16" smashed="yes">
-<attribute name="VALUE" x="83.82" y="7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="P+33" gate="1" x="91.44" y="40.64" smashed="yes">
-<attribute name="VALUE" x="83.82" y="38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="LED31" gate="G$1" x="111.76" y="22.86" smashed="yes"/>
-<instance part="GND52" gate="1" x="111.76" y="10.16" smashed="yes">
-<attribute name="VALUE" x="109.22" y="7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="P+34" gate="1" x="116.84" y="40.64" smashed="yes">
-<attribute name="VALUE" x="109.22" y="38.1" size="1.778" layer="96"/>
-</instance>
-<instance part="LED32" gate="G$1" x="137.16" y="22.86" smashed="yes"/>
-<instance part="GND53" gate="1" x="137.16" y="10.16" smashed="yes">
-<attribute name="VALUE" x="134.62" y="7.62" size="1.778" layer="96"/>
-</instance>
-<instance part="P+35" gate="1" x="142.24" y="40.64" smashed="yes">
-<attribute name="VALUE" x="134.62" y="38.1" size="1.778" layer="96"/>
-</instance>
 <instance part="LED9" gate="G$1" x="238.76" y="152.4" smashed="yes"/>
 <instance part="GND9" gate="1" x="238.76" y="139.7" smashed="yes">
 <attribute name="VALUE" x="236.22" y="137.16" size="1.778" layer="96"/>
@@ -22513,27 +22403,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </instance>
 <instance part="P+20" gate="1" x="243.84" y="127" smashed="yes">
 <attribute name="VALUE" x="236.22" y="124.46" size="1.778" layer="96"/>
-</instance>
-<instance part="LED25" gate="G$1" x="187.96" y="66.04" smashed="yes"/>
-<instance part="GND45" gate="1" x="187.96" y="53.34" smashed="yes">
-<attribute name="VALUE" x="185.42" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+27" gate="1" x="193.04" y="83.82" smashed="yes">
-<attribute name="VALUE" x="185.42" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED26" gate="G$1" x="213.36" y="66.04" smashed="yes"/>
-<instance part="GND47" gate="1" x="213.36" y="53.34" smashed="yes">
-<attribute name="VALUE" x="210.82" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+28" gate="1" x="218.44" y="83.82" smashed="yes">
-<attribute name="VALUE" x="210.82" y="81.28" size="1.778" layer="96"/>
-</instance>
-<instance part="LED27" gate="G$1" x="238.76" y="66.04" smashed="yes"/>
-<instance part="GND48" gate="1" x="238.76" y="53.34" smashed="yes">
-<attribute name="VALUE" x="236.22" y="50.8" size="1.778" layer="96"/>
-</instance>
-<instance part="P+30" gate="1" x="243.84" y="83.82" smashed="yes">
-<attribute name="VALUE" x="236.22" y="81.28" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -22605,46 +22474,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND35" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED20" gate="G$1" pin="GND"/>
-<pinref part="GND36" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED21" gate="G$1" pin="GND"/>
-<pinref part="GND37" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED22" gate="G$1" pin="GND"/>
-<pinref part="GND38" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED23" gate="G$1" pin="GND"/>
-<pinref part="GND39" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED24" gate="G$1" pin="GND"/>
-<pinref part="GND40" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED28" gate="G$1" pin="GND"/>
-<pinref part="GND49" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED29" gate="G$1" pin="GND"/>
-<pinref part="GND50" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED30" gate="G$1" pin="GND"/>
-<pinref part="GND51" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED31" gate="G$1" pin="GND"/>
-<pinref part="GND52" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED32" gate="G$1" pin="GND"/>
-<pinref part="GND53" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="LED9" gate="G$1" pin="GND"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
@@ -22655,18 +22484,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="LED18" gate="G$1" pin="GND"/>
 <pinref part="GND34" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED25" gate="G$1" pin="GND"/>
-<pinref part="GND45" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED26" gate="G$1" pin="GND"/>
-<pinref part="GND47" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="LED27" gate="G$1" pin="GND"/>
-<pinref part="GND48" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+5V" class="1">
@@ -22735,46 +22552,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="P+21" gate="1" pin="+5V"/>
 </segment>
 <segment>
-<pinref part="LED20" gate="G$1" pin="VDD"/>
-<pinref part="P+22" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED21" gate="G$1" pin="VDD"/>
-<pinref part="P+23" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED22" gate="G$1" pin="VDD"/>
-<pinref part="P+24" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED23" gate="G$1" pin="VDD"/>
-<pinref part="P+25" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED24" gate="G$1" pin="VDD"/>
-<pinref part="P+26" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED28" gate="G$1" pin="VDD"/>
-<pinref part="P+31" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED29" gate="G$1" pin="VDD"/>
-<pinref part="P+32" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED30" gate="G$1" pin="VDD"/>
-<pinref part="P+33" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED31" gate="G$1" pin="VDD"/>
-<pinref part="P+34" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED32" gate="G$1" pin="VDD"/>
-<pinref part="P+35" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="LED9" gate="G$1" pin="VDD"/>
 <pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
@@ -22785,18 +22562,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="LED18" gate="G$1" pin="VDD"/>
 <pinref part="P+20" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED25" gate="G$1" pin="VDD"/>
-<pinref part="P+27" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED26" gate="G$1" pin="VDD"/>
-<pinref part="P+28" gate="1" pin="+5V"/>
-</segment>
-<segment>
-<pinref part="LED27" gate="G$1" pin="VDD"/>
-<pinref part="P+30" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -22877,65 +22642,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="LED15" gate="G$1" pin="DO"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="LED20" gate="G$1" pin="DI"/>
-<pinref part="LED19" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="LED21" gate="G$1" pin="DI"/>
-<pinref part="LED20" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="LED22" gate="G$1" pin="DI"/>
-<pinref part="LED21" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="LED23" gate="G$1" pin="DI"/>
-<pinref part="LED22" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="LED24" gate="G$1" pin="DI"/>
-<pinref part="LED23" gate="G$1" pin="DO"/>
-</segment>
-</net>
 <net name="LED_SIG" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="DI"/>
 <wire x1="22.86" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
 <label x="5.08" y="149.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="LED29" gate="G$1" pin="DI"/>
-<pinref part="LED28" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="LED30" gate="G$1" pin="DI"/>
-<pinref part="LED29" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="LED31" gate="G$1" pin="DI"/>
-<pinref part="LED30" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="LED32" gate="G$1" pin="DI"/>
-<pinref part="LED31" gate="G$1" pin="DO"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -22954,24 +22665,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="LED18" gate="G$1" pin="DI"/>
 <pinref part="LED17" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="LED26" gate="G$1" pin="DI"/>
-<pinref part="LED25" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="LED27" gate="G$1" pin="DI"/>
-<pinref part="LED26" gate="G$1" pin="DO"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="LED25" gate="G$1" pin="DI"/>
-<pinref part="LED24" gate="G$1" pin="DO"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -22994,17 +22687,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="LED19" gate="G$1" pin="DI"/>
 <wire x1="20.32" y1="88.9" x2="20.32" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="20.32" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="LED28" gate="G$1" pin="DI"/>
-<wire x1="22.86" y1="20.32" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="20.32" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="45.72" x2="254" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="254" y1="45.72" x2="254" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="LED27" gate="G$1" pin="DO"/>
-<wire x1="254" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

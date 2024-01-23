@@ -20833,10 +20833,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <sheets>
 <sheet>
 <plain>
-<wire x1="162.56" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="94"/>
-<text x="2.54" y="50.8" size="6.4516" layer="94">VL53L0X</text>
+<text x="2.54" y="81.28" size="6.4516" layer="94">VL53L0X</text>
 <text x="2.54" y="2.54" size="6.4516" layer="94">REGULATOR</text>
-<wire x1="162.56" y1="35.56" x2="162.56" y2="48.26" width="0.1524" layer="94"/>
 </plain>
 <instances>
 <instance part="REG1" gate="G$1" x="50.8" y="33.02" smashed="yes">
