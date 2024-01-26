@@ -8712,6 +8712,7 @@
 <rectangle x1="-6.0165" y1="3.39093125" x2="-5.4353" y2="3.4199875" layer="26" rot="R180"/>
 <rectangle x1="-5.8421" y1="3.419990625" x2="-5.4644" y2="3.449046875" layer="26" rot="R180"/>
 <text x="0" y="-0.1453" size="0.0581" layer="200" font="vector">/Users/shirokuma89dev/Downloads/アートボード 2@4x (1).bmp</text>
+<wire x1="0" y1="-23.8842125" x2="0" y2="-23.795" width="0.254" layer="26"/>
 </plain>
 <libraries>
 <library name="Seeeduino XIAO">
@@ -12365,7 +12366,6 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <wire x1="3.294" y1="-24.10731875" x2="2.85231875" y2="-24.549" width="0.254" layer="1"/>
 <wire x1="2.85231875" y1="-24.549" x2="0.6647875" y2="-24.549" width="0.254" layer="1"/>
 <wire x1="0.6647875" y1="-24.549" x2="0" y2="-23.8842125" width="0.254" layer="1"/>
-<wire x1="0" y1="-23.8842125" x2="0" y2="-23.795" width="0.254" layer="1"/>
 <wire x1="3.7939" y1="-21.4" x2="3.294" y2="-21.8999" width="0.254" layer="1"/>
 <wire x1="3.294" y1="-21.8999" x2="3.294" y2="-24.10731875" width="0.254" layer="1"/>
 <contactref element="U1" pad="8"/>
@@ -12374,6 +12374,7 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <via x="4.1592" y="-11.43" extent="1-16" drill="0.35"/>
 <wire x1="4.1592" y1="-11.43" x2="0.09" y2="-11.43" width="0.254" layer="16"/>
 <wire x1="0.09" y1="-11.43" x2="-1.34" y2="-10" width="0.254" layer="16"/>
+<wire x1="0" y1="-23.8842125" x2="0" y2="-23.795" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="UART5-TX">
 <contactref element="U3" pad="53"/>

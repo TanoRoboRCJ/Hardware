@@ -2956,6 +2956,11 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <via x="20.4" y="10.2" extent="1-16" drill="0.35"/>
 <via x="5.4" y="7.2" extent="1-16" drill="0.35"/>
 <via x="5.4" y="9.9" extent="1-16" drill="0.35"/>
+<via x="-10.3" y="20" extent="1-16" drill="0.35"/>
+<via x="-24.4" y="1.1" extent="1-16" drill="0.35"/>
+<via x="-7.9" y="8.3" extent="1-16" drill="0.35"/>
+<via x="-8.8" y="11" extent="1-16" drill="0.35"/>
+<via x="-16" y="15.8" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V" class="1">
 <contactref element="U1" pad="14"/>

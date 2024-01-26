@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.3" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2950,6 +2950,10 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 </polygon>
 <via x="-10.5" y="25.4" extent="1-16" drill="0.35"/>
 <via x="-2.5" y="25.4" extent="1-16" drill="0.35"/>
+<via x="1.6" y="24.1" extent="1-16" drill="0.35"/>
+<via x="5.9" y="24.1" extent="1-16" drill="0.35"/>
+<via x="18.6" y="11.7" extent="1-16" drill="0.35"/>
+<via x="20.4" y="10.2" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V" class="1">
 <contactref element="U1" pad="14"/>

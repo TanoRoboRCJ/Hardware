@@ -2948,6 +2948,8 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <vertex x="40" y="-60"/>
 <vertex x="-40" y="-60"/>
 </polygon>
+<via x="-10.5" y="25.4" extent="1-16" drill="0.35"/>
+<via x="-2.5" y="25.4" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="+5V" class="1">
 <contactref element="U1" pad="14"/>
