@@ -15872,12 +15872,22 @@ See DataSheet：
 <wire x1="474.98" y1="147.32" x2="482.6" y2="147.32" width="0.1524" layer="91"/>
 <label x="485.14" y="147.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="PA5"/>
+<wire x1="388.62" y1="114.3" x2="381" y2="114.3" width="0.1524" layer="91"/>
+<label x="368.3" y="114.3" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="XSHUT2" class="0">
 <segment>
 <pinref part="JP4" gate="G$1" pin="1"/>
 <wire x1="505.46" y1="147.32" x2="513.08" y2="147.32" width="0.1524" layer="91"/>
 <label x="515.62" y="147.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="PA6"/>
+<wire x1="388.62" y1="111.76" x2="381" y2="111.76" width="0.1524" layer="91"/>
+<label x="368.3" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -16429,18 +16439,43 @@ See DataSheet：
 </sheet>
 </sheets>
 <errors>
-<approved hash="101,1,106.68,17.78,JP2,2,,,,"/>
-<approved hash="101,1,137.16,17.78,JP4,2,,,,"/>
+<approved hash="101,1,474.98,144.78,JP2,2,,,,"/>
+<approved hash="101,1,505.46,144.78,JP4,2,,,,"/>
 <approved hash="104,1,53.34,83.82,AMP1,V+,+3V3,,,"/>
 <approved hash="104,1,53.34,68.58,AMP1,V-,GND,,,"/>
 <approved hash="104,1,53.34,38.1,AMP2,V+,+3V3,,,"/>
 <approved hash="104,1,53.34,22.86,AMP2,V-,GND,,,"/>
+<approved hash="104,1,304.8,172.72,X2,VBUS,N$49,,,"/>
+<approved hash="104,1,284.48,127,U2B,VSS_2,GND,,,"/>
+<approved hash="104,1,284.48,124.46,U2B,VSS_3,GND,,,"/>
+<approved hash="104,1,284.48,121.92,U2B,VSS_4,GND,,,"/>
+<approved hash="104,1,284.48,119.38,U2B,VSS,GND,,,"/>
+<approved hash="104,1,284.48,114.3,U2B,VSSA/VREF-,GND,,,"/>
+<approved hash="104,1,284.48,109.22,U2B,VBAT,+3V3,,,"/>
+<approved hash="104,1,345.44,127,U2B,VDD_2,+3V3,,,"/>
+<approved hash="104,1,345.44,124.46,U2B,VDD_3,+3V3,,,"/>
+<approved hash="104,1,345.44,121.92,U2B,VDD_4,+3V3,,,"/>
+<approved hash="104,1,345.44,119.38,U2B,VDD,+3V3,,,"/>
+<approved hash="104,1,345.44,114.3,U2B,VDDA/VREF+,+3V3,,,"/>
+<approved hash="104,1,345.44,109.22,U2B,VCAP_1,N$18,,,"/>
+<approved hash="104,1,320.04,58.42,U3,VCC,+5V,,,"/>
+<approved hash="104,1,320.04,73.66,U3,V3,N$11,,,"/>
+<approved hash="209,1,292.1,53.34,CTS,,,,,"/>
+<approved hash="106,1,292.1,53.34,CTS,,,,,"/>
+<approved hash="106,1,292.1,58.42,RTS,,,,,"/>
 <approved hash="113,1,131.976,90.066,FRAME1,,,,,"/>
-<approved hash="113,1,212.725,67.5399,U1,,,,,"/>
-<approved hash="113,1,106.443,40.8356,JP1,,,,,"/>
-<approved hash="113,1,106.443,20.5156,JP2,,,,,"/>
-<approved hash="113,1,136.923,40.8356,JP3,,,,,"/>
-<approved hash="113,1,136.923,20.5156,JP4,,,,,"/>
+<approved hash="113,1,474.743,167.866,JP1,,,,,"/>
+<approved hash="113,1,474.743,147.546,JP2,,,,,"/>
+<approved hash="113,1,505.223,167.866,JP3,,,,,"/>
+<approved hash="113,1,505.223,147.546,JP4,,,,,"/>
+<approved hash="113,1,401.216,90.066,FRAME2,,,,,"/>
+<approved hash="113,1,501.608,122.146,JP5,,,,,"/>
+<approved hash="113,1,501.608,94.2061,JP6,,,,,"/>
+<approved hash="113,1,393.7,160.995,S1,,,,,"/>
+<approved hash="113,1,523.24,126.323,R16,,,,,"/>
+<approved hash="113,1,523.24,98.3827,R17,,,,,"/>
+<approved hash="113,1,93.7853,-13.5788,JP7,,,,,"/>
+<approved hash="113,1,70.8829,-62.0039,JP8,,,,,"/>
 </errors>
 </schematic>
 </drawing>
